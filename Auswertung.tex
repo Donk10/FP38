@@ -59,9 +59,23 @@ The photolysis rate, depending on sun angle and intensity, is described by $j_{N
 During a day the $NO_2$ and $NO$ concentrations change cyclically due to the building of $NO_3$ and $NO_5$. In the \textit{morning} the mixing ratio of $NO_2$ in the stratosphere increases due to the dissociation of $NO_5$ excited by photons. During the \textit{day} $NO$, $NO_2$ and $O_3$ are in a photostationary balance and in the \textit{evening} the photolysis (eq. \ref{photolysis}) decreases and $NO$ is no longer created, leading to an increase of $NO_2$. At \textit{night} $NO_2$ forms $NO_5$ again.
 \paragraph{Photochemical smog}
 Photochemical smog occurs when high levels of volaticle organic compounds (VOCs) and $NO_X$ are emitted into thermal inversion layer so that are trapped closely to the ground. This leads to very high ozone levels in the troposphere because in the presence of VOCs there is another reaction path for the conversion of $NO$ to $NO_2$. The reaction between VOCs and $NO_X$ means that the Leighton ratio is no longer valid with the photostationary balance and destruction of $O_3$. 
-
  \subsection{The DOAS Measurement System}
-
+The DOAS measurement system is used for detection of trace gases in the atmosphere. It's principle is to measure the absorption spectrum of specific substances using the \textit{Lambert Beer} law for $n$ different absorbers (eq. \ref{beer}).
+\begin{equation}\label{beer}
+I(\lambda, L) = I_0(\lambda) \cdot \exp (- \int^{L(\lambda)}_0 \sum_i^n \sigma_i(\lambda) \cdot \rho_i(s) ds)
+\end{equation}
+The absorption cross section is defined as $\sigma$ and the SCD is defined (in eq. \ref{SCD}) as the integrated concentration $\rho$ of a trace gas $i$ along the light path of length $L$.
+\begin{equation}\label{SCD}
+\text{SCD} = S_i(\lambda) =\int^{L(\lambda)}_0  \rho_i(s) ds)
+\end{equation}
+Because it is not possible to single out every single out every different absorber to get a direct absorption spectrum for measurements in the atmosphere the DOAS method uses the fact that may processes in radiative transfer show broad or even smooth spectral characteristics. This stands in contrast to the narrowband absorption structures many trace gases exhibit. So the key concept of DOAS is the separation of spectral structures in narrowband and broadband components, called \textit{differential spectra}. With this method narrowband absorptions of trace gases can be detected.\\
+When taking a DOAS measurement to to quantify the SCD of a specific trace gas in the atmosphere the \textit{Frauenhofer refence spectrum} $I_0$ because of the sun's structured spectrum. The Ring effect is the narrowing of absorption bands due to Raman scattering which also needs to be taken into account.\\
+The light's broadband spectrum is mostly affected by Mie and Rayleigh scattering also some of the trace gases exhibit broad band absorption too. In the DOAS fit minimizing the quadratic deviation of the optical density $\tau$ (eq. \ref{tau}).
+\begin{equation}\label{tau}
+\tau = \log (\frac{I(\lambda)}{I_0(\lambda) }) = -R -\sum_i \sigma_i S_i - \sum_k b_k \lambda^k
+\end{equation}
+The broadband absorption is described by the polynomial $\sum_k b_k \lambda^k$ while the rest of the formula describes the narrowband features and $R$ is the Ring spectrum. The fit parameters are $S_i$ and the polynomial coefficients $b_k$ for a minimized residual.\\
+The DEAS method can only detect a trace gas with an optical density larger than the residual.
 \newpage
 \section{Meassurements}
 \subsection{Nitrogendioxid gas-cell}
