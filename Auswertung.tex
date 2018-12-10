@@ -5,7 +5,7 @@
 \usepackage{multicol}
 \usepackage{graphicx}
 \usepackage{caption}
-\graphicspath{graphics/}
+\graphicspath{./graphics/}
 \usepackage{siunitx}
 
 \sisetup{separate-uncertainty}
@@ -75,35 +75,50 @@ The light's broadband spectrum is mostly affected by Mie and Rayleigh scattering
 \tau = \log (\frac{I(\lambda)}{I_0(\lambda) }) = -R -\sum_i \sigma_i S_i - \sum_k b_k \lambda^k
 \end{equation}
 The broadband absorption is described by the polynomial $\sum_k b_k \lambda^k$ while the rest of the formula describes the narrowband features and $R$ is the Ring spectrum. The fit parameters are $S_i$ and the polynomial coefficients $b_k$ for a minimized residual.\\
-The DEAS method can only detect a trace gas with an optical density larger than the residual.
-\newpage
+The DOAS method can only detect a trace gas with an optical density larger than the residual.
 \section{Meassurements}
+In the following sections the conduction of our measurements is described. The spectrograph-detector used for the measurements is the Ocean Optics USB2000 based on the Czerny-Truner design and is located in a cooled housing unit. 
+The telescopes are connected via a $400 \mu m$ diameter quarty fiber bundle (NA $0.22$) with the spectrometer. The spectrometer either can be connected to a telescope for atmospheric measurements or a lab telescope. \\
+The initial few measurements were only used to compute the Background noise of the spectrometer, which consists of the electronic offset, dark current and the uncertainty of the light counts due to the under lying poisson distribution. After that the pixel to wavelength ratio of the spectrometer was calibrated with a mercury lamp using a polynomial fit. These measurements will note be further discussed.\\
 \subsection{Nitrogendioxid gas-cell}
-In this part of the experiment we measured the absorption of a $NO_2$ gas-cell in the spectrum of an Hg-lamp. Due to the nature of this measurement we could simplify the problem by using the fact that we have access to $I_0$ by taking a spectrum without the gas cell in the light path and then take a measurement with the gas-cell in the light path to measure $I$. After dark current and offset were corrected for both measurements we used the simplified lambert-beer law to get to equation.
-\begin{equation}
-\tau = \log(\frac{I_0(\lambda)}{I_0(\lambda)})= \sigma_{NO_2} \cdot \rho \cdot L
-\end{equation}
-The reference convolution for $NO_2$ was then used to compute the SCD$= \rho \cdot L$. This was then used to compute the density $\rho = (2.81 \pm 0.07 ) \cdot 10^{-7} \frac{\text{mol}}{\text{cm}^3}$ and the mixture ratio $(6.29 \pm 0.39) \cdot 10^3 \text{ppm}$.
-\subsection{Sunlight of a recorded daycycle}
-
-\subsection{Sunlight different evaluations angles}
-
+In this part of the experiment we measured the absorption of a $NO_2$ gas-cell in the spectrum of an Hg-lamp. Due to the nature of this measurement we could simplify the problem by using the fact that we have access to $I_0$ by taking a spectrum without the gas cell in the light path and then take a measurement with the gas-cell in the light path to measure $I$.\\
+The integration time $t$ is $100ms$ and number of scans is equal to $100$. for both the measurement of $I$ and $I_0$
+\subsection{Zenith sky measurements of a daycycle}
+In this experiment we chose the zenith sky measurement spectra recorded on the daycycle of a sunny day. For zenith sky measurements the telescope is orientated straight up with an elevation angle ($\alpha$) of $90 \deg$. This can be seen in figure \ref{sza}.\\
+\begin{figure}
+\includegraphics[width= 0.2\textwidth]{graphics/sza.png}
+\caption{Light paths trough the atmosphere for a small (left) and high (right) SZA. The light path through the stratosphere is enhanced for higher SZA.}\label{sza}
+\end{figure}
+We used the measurement with a minimal solar zenith angle ($\theta$) as Frauenhofer reference spectrum because it has the least interaction with the atmosphere due to the minimal path length. 
+\subsection{Multi-Axis-DOAS}
+In this part we measured spectra for different elevation angles ($\alpha$) of the telescope. For smaller elevation angles light entering the telescope is strongly scattered and has a longer path in the troposphere leading to an increased interaction with the gases found in the troposphere. This schematic can be seen in figure \ref{multiaxis}.
+\begin{figure}
+\includegraphics[width= 0.2\textwidth]{graphics/multiaxis.png}
+\caption{Light paths for different elevation angles of the telescope at with identical SZA.}\label{multiaxis}
+\end{figure}
+To measure the trace gas concentration in the troposphere it is important that the measurements for the different elevation angles of the telescope have a very similar SZA. This means that they should be taken in the shortest frame of time in successive order possible.\\
+The Frauenhofer reference spectrum for these measurements was taken with $\alpha = 90\deg$ to minimize the path length in the troposphere and two measurements with $\alpha$ being $7 \deg$ and $9 \deg$.\\
+These measurements were taken 3 times on the 5th December 2018. The weather was a bit cloudy but mostly clear with a weak sun intensity.
+The integration time of $600$ms lead to a sufficient saturation and 600 scans were used as parameters.
 \section{Results}
 \subsection{Nitrogendioxid gas-cell}
 After dark current and offset were corrected for both measurements we used the simplified lambert-beer law to get to equation.
 \begin{equation}
-\tau = \log(\frac{I_0(\lambda)}{I_0(\lambda)})= \sigma_{NO_2} \cdot \rho \cdot L
+\tau = \log(\frac{I(\lambda)}{I_0(\lambda)})= \sigma_{NO_2} \cdot \rho \cdot L
 \end{equation}
 The reference convolution for $NO_2$ was then used to compute the SCD$= \rho \cdot L$. This was then used to compute the density $\rho = (2.81 \pm 0.07 ) \cdot 10^{-7} \frac{\text{mol}}{\text{cm}^3}$ and the mixture ratio $(6.29 \pm 0.39) \cdot 10^3 \text{ppm}$.
 
 
-\subsection{Sunlight of a recorded daycycle}
+\subsection{Zenith sky measurements of a daycycle}
+ADD THEORY FOR ZENITH SKY MEASUREMENTS.... from 4.3.2
+
 The DOAS least squares fit computes the SCD values for the different daytimes and traces gases, namely ozone and nitrogendioxid. Those values were then plotted and can be seen in figures ...
 \begin{figure}
-\includegraphics[width= 0.9\textwidth]{graphics/o3scd.pdf}
+\includegraphics[width= 0.4\textwidth]{graphics/o3scd.pdf}
 \end{figure}
 
-\subsection{Sunlight different evaluations angles}
+\subsection{Multi-Axis-DOAS}
+ADD THEORY FOR MULTI-AXIS-DOAS 4.3.3
 
 
 \section{Discussion}
