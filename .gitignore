@@ -1,5 +1,6 @@
 .DS_Store
 Auswertung.pdf
+sources/*
 #####gitignorelatex from https://github.com/github/gitignore ########
 
 ## Core latex/pdflatex auxiliary files:
