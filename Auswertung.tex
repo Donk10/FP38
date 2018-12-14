@@ -75,7 +75,7 @@ The absorption cross section is defined as $\sigma$ and the SCD is defined (in e
 \text{SCD} = S_i(\lambda) =\int^{L(\lambda)}_0  \rho_i(s) ds)
 \end{equation}
 Because it is not possible to single out every different absorber to get a direct absorption spectrum for measurements in the atmosphere the DOAS method uses the fact that may processes in radiative transfer show broad or even smooth spectral characteristics. This stands in contrast to the narrowband absorption structures many trace gases exhibit. So the key concept of DOAS is the separation of spectral structures in narrowband and broadband components, called \textit{differential spectra}. With this method narrowband absorptions of trace gases can be detected.\\
-When taking a DOAS measurement to to quantify the SCD of a specific trace gas in the atmosphere the \textit{Frauenhofer refence spectrum} $I_0$ because of the sun's structured spectrum. The Ring effect is the narrowing of absorption bands due to Raman scattering which also needs to be taken into account.\\
+When taking a DOAS measurement to to quantify the SCD of a specific trace gas in the atmosphere the \textit{Fraunhofer refence spectrum} $I_0$ because of the sun's structured spectrum. The Ring effect is the narrowing of absorption bands due to Raman scattering which also needs to be taken into account.\\
 The light's broadband spectrum is mostly affected by Mie and Rayleigh scattering also some of the trace gases exhibit broad band absorption too. In the DOAS fit minimizing the quadratic deviation of the optical density $\tau$ (eq. \ref{tau}).
 \begin{equation}\label{tau}
 \tau = \log (\frac{I(\lambda)}{I_0(\lambda) }) = -R -\sum_i \sigma_i S_i - \sum_k b_k \lambda^k
@@ -98,22 +98,22 @@ In this experiment we chose the zenith sky measurement spectra recorded on the d
  \captionof{figure}{Light paths trough the atmosphere for a small (left) and high (right) SZA. The light path through the stratosphere is enhanced for higher SZA.}
  \label{sza}
 \end{Figure}
-We used the measurement with a minimal solar zenith angle ($\theta$) as Frauenhofer reference spectrum because it has the least interaction with the atmosphere due to the minimal path length. 
+We used the measurement with a minimal solar zenith angle ($\theta$) as Fraunhofer reference spectrum because it has the least interaction with the atmosphere due to the minimal path length. 
 \subsection{Multi-Axis-DOAS}
 In this part we measured spectra for different elevation angles ($\alpha$) of the telescope. For smaller elevation angles light entering the telescope is strongly scattered and has a longer path in the troposphere leading to an increased interaction with the gases found in the troposphere. This schematic can be seen in figure \ref{multiaxis}.
 \begin{Figure}
  \centering
  \captionsetup{format=plain}
  \includegraphics[width=\linewidth]{graphics/multiaxis.png}
- \captionof{figure}{Light paths for different elevation angles of the telescope at with identical SZA.}
+ \captionof{figure}{Light paths for different elevation angles of the telescope with identical SZA.}
  \label{multiaxis}
 \end{Figure}
 To measure the trace gas concentration in the troposphere it is important that the measurements for the different elevation angles of the telescope have a very similar SZA. This means that they should be taken in the shortest frame of time in successive order possible.\\
-The Frauenhofer reference spectrum for these measurements was taken with $\alpha = 90\deg$ to minimize the path length in the troposphere and two measurements with $\alpha$ being $7 \deg$ and $9 \deg$.\\
+The Fraunhofer reference spectrum for these measurements was taken with $\alpha = 90\deg$ to minimize the path length in the troposphere and two measurements with $\alpha$ being $7 \deg$ and $9 \deg$.\\
 These measurements were taken 4 times on the 5th December 2018. The weather was a bit cloudy but mostly clear with a weak sun intensity.
 The integration time of $600$ms lead to a sufficient saturation and 600 scans were used as parameters.
 \section{Results}
-First of all, we computed the offset and the dark current and corrected every measurements with these values. Moreover, we calibrated the spectrometer with the mercuray spectra. 
+First of all, we computed the offset and the dark current and corrected every measurement with these values. Moreover, we calibrated the spectrometer with the mercury spectra. 
 \subsection{Nitrogendioxid gas-cell}
 First we adapted the high resolution wavelength reference measurements to our spectrometer used in this experiment. This is done by convolving the high resolution reference cross-section with the DOAS slit function. We used the Lambert-Beer law and performed a least-squares fit to obtain the concentration of the gas-cell:
 \begin{equation}
@@ -128,7 +128,7 @@ and the mixture ratio:
 r_{mix} = (6.29 \pm 0.39) \cdot 10^3 \text{ppm}
 \end{equation}
 \subsection{Zenith sky measurements of a daycycle}
-We picked a sunny day for our evaluation with the frauenhofer reference number: T00562103 and the spectrum reference number: T0056227. We used a high solar zenith angle because the approximation for the air mass factor (AMF) is only valid for $\theta \geq 76 \degree$. First, we evaluate the approach on a single measurement by means we optmized the fit setting. For $NO_2$ we used the fit range: $[426-449] nm$ and for $O_3$: $[327-339] nm$. Afterwards, we evaluated the other spectras for that day.
+We picked a sunny day for our evaluation with the Fraunhofer reference number: T00562103 and the spectrum reference number: T0056227. We used a high solar zenith angle because the approximation for the air mass factor (AMF) is only valid for $\theta \geq 76 \degree$. First, we evaluate the approach on a single measurement by means we optmized the fit setting. For $NO_2$ we used the fit range: $[426-449] nm$ and for $O_3$: $[327-339] nm$. Afterwards, we evaluated the other spectras for that day.
 We obtained with DOAS least squares fit the SCD values for different traces gases, namely ozone and nitrogendioxid. Those values were then plotted as a function of time of day and can be seen in figures \ref{NO2} and \ref{O2}.
 \begin{Figure}
  \centering
@@ -155,12 +155,13 @@ We obtained with DOAS least squares fit the SCD values for different traces gase
  \centering
  \captionsetup{format=plain}
  \includegraphics[width=\linewidth]{graphics/03vcd.pdf}
- \captionof{figure}{VCD as a function of time}
+ \captionof{figure}{VCD of ozone as a function of time}
   \label{vcd}
 \end{Figure}
-In figure \ref{vcd} the vertical column density is plotted against time. The VCD can be computed with $VCD = SCD \cdot AMF$ provides the most useful and directly interpretable information on the distribution and concentration of trace gases. AMF can be approximated by: $AMF \approx \frac{1}{cos(\theta)}$. The U-shape of the $NO_2$ profile is caused by stratospheric $NO_2$. The U-shape of ozone is caused by cosmic radiation and can be confirmed by theory. In figure \ref{Lang} the $\Delta$ SCD is plotted against the AMF factor and we performed a linear fit for AMF $\leq 3.5$. With the extrapolation we obtained the slant column density in the Fraunhoer reference $SCD_{ref} =( 4.89\pm 0.10 ) \cdot 10^{18} $.
+In figure \ref{vcd} the vertical column density is plotted against time. The VCD can be computed with $VCD = SCD \cdot AMF$ provides the most useful and directly interpretable information on the distribution and concentration of trace gases. AMF can be approximated by: $AMF \approx \frac{1}{cos(\theta)}$. The U-shape of the $NO_2$ profile is caused by stratospheric $NO_2$. The U-shape of ozone is caused by cosmic radiation and can be confirmed by theory. In figure \ref{Lang} the $\Delta$ SCD is plotted against the AMF factor and we performed a linear fit for AMF $\leq 3.5$. With the extrapolation we obtained the slant column density in the Fraunhofer reference $SCD_{ref} =( 1.23\pm 0.03 ) \cdot 10^{19} $.
 \subsection{Multi-Axis-DOAS}
 Here we want to gain insight into the vertical distribution of trace gases ($NO_2$ and $O_3$)in the atmosphere. To this extent, scattered light spectra are recorded using different ($7 \degree, 12 \degree \text{\ and\ } 90 \degree$) telescope elevation angles. The $90 \degree$ measurement was used as a Fraunhofer reference spectrum for each set. In figure \ref{angle} the SCD for $7 \degree \text{\ and\ } 12 \degree$ are plotted. We carried out 4 measurements for each angle and took the mean and for the error the standard deviation for each angle. 
+Because all measurements were taken in a timeframe of less than 1 hour we took the mean values instead of them.
 \begin{Figure}
  \centering
  \captionsetup{format=plain}
@@ -170,9 +171,12 @@ Here we want to gain insight into the vertical distribution of trace gases ($NO_
 \end{Figure}
 The SCD for Ozone keeps constant by changing the angle. However, $NO_2$ decreases significantly by enlarging the elevation angle.
 \section{Discussion}
-The $\Delta$ SCD plot for ozone resembles the theoretical values well which can be seen in the good linear fit of the langley plot of the ozone $\Delta SCD$ against the AMF. 
-From the elevation angle part it is clear that $NO_2$ is located in the troposphere because of the significant change of SCD in which also specific times like rush hours with high $NO$ emission can be seen . The SCD for Ozone remains constant leading to the conclusion that it is almost only located in higher areas of the atmosphere, namely the stratosphere.\\
-Our results also conclude that there is no trace of photochemical smog in the area of Heidelberg on the 5th December 2018, the day of our measurement.ß 
+During this experiment we learned a lot about the behaviour of stratosphere and troposphere regarding their $NO_2$ and ozone concentrations.
+While the first parts of the experiment were used to explain the measurement system and calibrate it.\\
+In the first atmospheric measurement we could verify the photostationary balance of $O_3$ in the VCD plot \ref{vcd} at 460 Dobson Units which value lies qualitatively close to the value we got from the website \textit{http://www.oyoneaq.gsfc.nasa.gov} with 330 Dobson Units.\\
+The $\Delta$ SCD plot for ozone resembles the theoretical values well which can be seen in the good linear fit of the langley plot of the ozone $\Delta SCD$ against the AMF (\ref{Lang}).  And the change of $NO_2$ concentration in the atmosphere due to the emission of humans could clearly be observed (\ref{NO2}).\\
+From the MAX-DOASIS measurements it is observable that $NO_2$ is located in the troposphere because of the significant change of SCD in for different elevation angles. The SCD for Ozone regarding different elevation angles remains constant leading to the conclusion that it is almost only located in higher areas of the atmosphere, namely the stratosphere.\\
+Our results also conclude that there is no trace of photochemical smog in the area of Heidelberg on the 5th December 2018, the day of our measurement.
 \end{multicols}
 
 \end{document}
