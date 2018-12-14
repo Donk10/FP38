@@ -30,15 +30,15 @@
 \section{Abstract}
 In this experiment the trace gases Nitrogendioxid ($NO_2$) and Ozone ($O_3$) are examined with DOASIS. These gases play an important role for life on earth. Therefore it is important to have a method to determine the concentration in the air. The DOASIS (DOAS Intelligent System) was developed at the Institut for Environmental physics at University Heidelberg
 \section{Introduction}
-The atmosphere is the gas cover surrounding an astronomic object due to its gravitation. The experiment on which this report is based analyses the atmosphere of the earth and how we humans interact with it by the usage of fossil fuels.\\
+The atmosphere is the gas cover surrounding of an astronomic object due to its gravitation. The experiment on which this report is based analyses the atmosphere of the earth and how we humans influence it by the usage of fossil fuels.\\
 The earth's atmosphere is divided into troposphere, stratosphere, mesosphere, thermosphere and exosphere. The UV-radiation of the sun is almost purely absorbed (roughly $95-99\%$) in the stratosphere by the gas ozone ($O_3$). 
 Due to the emission of climate gases or radicals for catalytic ozone destruction such as $NO$ humans impacted the concentration of $O_3$ in stratosphere and troposphere.\\  
 This lead to the creation of the Ozone-hole over antarctica (and the arctica) as well as health issues in urban or strongly industrialized areas due to photochemical smog.\\
-The overarching goal of the experiments was it to analyse the $O_3$ and $NO_2$ concentrations over the course of the day and their spatial arrangement.\\
+The overarching goal of the experiments was to analyse the $O_3$ and $NO_2$ concentrations over the course of the day and their spatial arrangement.\\
 All measurements in this experiment were done with the \textbf{D}ifferential \textbf{O}ptical \textbf{A}bsorption \textbf{S}pectroscopy method. 
 First we conducted a mini experiment with a $NO_2$ gas-cell to learn the basis functions of our spectrometer and the methods used in combination to measure the \textbf{S}lant \textbf{C}olumn \textbf{D}ensity with an active source of light.\\
 Second we did a Zenith sky measurement to determine the \textbf{V}ertical \textbf{C}olumn \textbf{D}ensity of $O_3$ and $NO_2$ over the course of a day. 
-In the last measurement we used the principle of Multi-Axis-DOAS by measuring the SCD for different elevation angles the incoming light to determine the density of $O_3$, $O_4$ and $NO_2$ in the troposphere.\\
+In the last measurement we used the principle of Multi-Axis-DOAS by measuring the SCD for different elevation angles the incoming light to determine the density of $O_3$ and $NO_2$ in the troposphere.\\
 \section{Background}
 In the following the most important principles to understand our measurements and conclusions are briefly introduced and a bit of reasoning for their importance.
 \subsection{Ozone and Nitrogendioxid}
@@ -90,7 +90,7 @@ The initial few measurements were only used to compute the Background noise of t
 In this part of the experiment we measured the absorption of a $NO_2$ gas-cell in the spectrum of an Hg-lamp. Due to the nature of this measurement we could simplify the problem by using the fact that we have access to $I_0$ by taking a spectrum without the gas cell in the light path and then take a measurement with the gas-cell in the light path to measure $I$.\\
 The integration time $t$ is $100ms$ and number of scans is equal to $100$. for both the measurement of $I$ and $I_0$
 \subsection{Zenith sky measurements of a daycycle}
-In this experiment we chose the zenith sky measurement spectra recorded on the daycycle of a sunny day. For zenith sky measurements the telescope is orientated straight up with an elevation angle ($\alpha$) of $90 \deg$. This can be seen in figure \ref{sza}.\\
+In this experiment we chose the zenith sky measurement spectra recorded on the daycycle of a sunny day. For zenith sky measurements the telescope is orientated straight up with an elevation angle ($\alpha$) of $90 \degree $. This can be seen in figure \ref{sza}.\\
 \begin{Figure}
  \centering
  \captionsetup{format=plain}
@@ -110,7 +110,7 @@ In this part we measured spectra for different elevation angles ($\alpha$) of th
 \end{Figure}
 To measure the trace gas concentration in the troposphere it is important that the measurements for the different elevation angles of the telescope have a very similar SZA. This means that they should be taken in the shortest frame of time in successive order possible.\\
 The Frauenhofer reference spectrum for these measurements was taken with $\alpha = 90\deg$ to minimize the path length in the troposphere and two measurements with $\alpha$ being $7 \deg$ and $9 \deg$.\\
-These measurements were taken 3 times on the 5th December 2018. The weather was a bit cloudy but mostly clear with a weak sun intensity.
+These measurements were taken 4 times on the 5th December 2018. The weather was a bit cloudy but mostly clear with a weak sun intensity.
 The integration time of $600$ms lead to a sufficient saturation and 600 scans were used as parameters.
 \section{Results}
 First of all, we computed the offset and the dark current and corrected every measurements with these values. Moreover, we calibrated the spectrometer with the mercuray spectra. 
@@ -158,7 +158,7 @@ We obtained with DOAS least squares fit the SCD values for different traces gase
  \captionof{figure}{VCD as a function of time}
   \label{vcd}
 \end{Figure}
-In figure \ref{vcd} the vertical column density is plotted against time. The VCD can be computed with $VCD = SCD \cdot AMF$ provides the most useful and directly interpretable information on the distribution and concentration of trace gases. The U-shape of the $NO_2$ profile is caused by stratospheric $NO_2$. The U-shape of ozone is caused by cosmic radiation and can be confirmed by theory. In figure \ref{Lang} the $\Delta$ SCD is plotted against the AMF factor and we performed a linear fit for AMF $\leq 3.5$. With the extrapolation we obtained the slant column density in the Fraunhoer reference $SCD_{ref} =( 4.89\pm 0.10 ) \cdot 10^{18} $.
+In figure \ref{vcd} the vertical column density is plotted against time. The VCD can be computed with $VCD = SCD \cdot AMF$ provides the most useful and directly interpretable information on the distribution and concentration of trace gases. AMF can be approximated by: $AMF \approx \frac{1}{cos(\theta)}$. The U-shape of the $NO_2$ profile is caused by stratospheric $NO_2$. The U-shape of ozone is caused by cosmic radiation and can be confirmed by theory. In figure \ref{Lang} the $\Delta$ SCD is plotted against the AMF factor and we performed a linear fit for AMF $\leq 3.5$. With the extrapolation we obtained the slant column density in the Fraunhoer reference $SCD_{ref} =( 4.89\pm 0.10 ) \cdot 10^{18} $.
 \subsection{Multi-Axis-DOAS}
 Here we want to gain insight into the vertical distribution of trace gases ($NO_2$ and $O_3$)in the atmosphere. To this extent, scattered light spectra are recorded using different ($7 \degree, 12 \degree \text{\ and\ } 90 \degree$) telescope elevation angles. The $90 \degree$ measurement was used as a Fraunhofer reference spectrum for each set. In figure \ref{angle} the SCD for $7 \degree \text{\ and\ } 12 \degree$ are plotted. We carried out 4 measurements for each angle and took the mean and for the error the standard deviation for each angle. 
 \begin{Figure}
